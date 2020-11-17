@@ -25,7 +25,7 @@ pip3 install markdown
 pip3 install django-filter
 ```
 
-**paso 3.**
+**Paso 3.**
 
 Crear proyecto de **DJANGO**
 
@@ -39,7 +39,7 @@ ingresamos a nuestro proyecto
 cd yaramerca
 ```
 
-**paso 4.**
+**Paso 4.**
 
 Listamos lo que hay dentro de nuestro proyecto
 
@@ -52,16 +52,51 @@ Se crea nuestra **app** que se llamara reto1
 ./manage.py startapp reto1
 ```
 
-ingresamos a la carpeta **yaramerca** y se agrega el perfil que va a tener nuestra app en este caso **reto1** así que verificamos el archivo denominado **settings.py**
+ingresamos a la carpeta **yaramerca** y se agrega el perfil que va a tener nuestra **app** en este caso **reto1** así que verificamos el archivo denominado **settings.py**
 
 ```sh
 vim settings.py
 ```
-En la opción **INSTALLED_APPS** se agregan las lineas 
+En la opción **INSTALLED_APPS** se agregan las siguientes lineas, las cuales son los perfiles de nuestra app y el framwork de **DJANGO**
 
 ```sh
 'reto1',                                                                
 'rest_framework', 
 ```
 ![2020-11-16_21-06](https://user-images.githubusercontent.com/42874558/99337464-4da3b080-2850-11eb-826e-c21ae7decbb9.png)
+
+
+**Paso 5.**
+
+Ingresamos a la carpeta de nuestra app que se denomina **reto1** y editamos el archivo denominado **models.py** el cual tendra los campos de nuestra BD
+
+```sh
+ class reglayara(models.Model):                                              
+    nombre=models.CharField(max_length=200)                                 
+    regla=models.TextField(max_length=5000)  
+```
+Guardamos cambios.
+
+**Paso 6.**
+
+Realizamos la migración del **modelo** 
+
+```sh
+ ./manage.py makemigrations 
+ ./manage.py makemigrate
+ ./manage.py migrate
+```
+
+**Paso 7.**
+
+Nos devolvemos  ala carpeta **yaramerca** editamos el archivo denominado **admin.py** donde agregamos nuestro proyecto
+
+
+```sh
+from .models import reglayara                                             
+                                               
+class reglayaraadmin(admin.ModelAdmin):                                     
+  pass                                                                    
+admin.site.register(reglayara,reglayaraadmin) 
+```
 
