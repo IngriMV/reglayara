@@ -89,7 +89,7 @@ Realizamos la migración del **modelo**
 
 **Paso 7.**
 
-Nos devolvemos  ala carpeta **yaramerca** editamos el archivo denominado **admin.py** donde agregamos nuestro proyecto
+Nos devolvemos  ala carpeta **yaramerca** editamos el archivo denominado **admin.py** donde agregamos nuestroa configuración del **usuario administrador** para dar acceso a los modelos de nuestro proyecto
 
 
 ```sh
