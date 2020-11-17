@@ -99,4 +99,32 @@ class reglayaraadmin(admin.ModelAdmin):
   pass                                                                    
 admin.site.register(reglayara,reglayaraadmin) 
 ```
+![2020-11-16_21-30](https://user-images.githubusercontent.com/42874558/99338871-0d91fd00-2853-11eb-967b-ccec9e4c9b54.png)
+
+Guardamos cambios
+
+**Paso 8.**
+
+Migramos los cambios 
+
+```sh
+ ./manage.py makemigrations 
+ ./manage.py migrate
+```
+
+**Paso 9.**
+
+Creamos un super usuario
+
+```sh
+./manage.py createsuperuser
+```
+
+y ejecutamos el servidor
+
+```sh
+./manage.py runserver
+```
+
+
 
