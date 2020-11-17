@@ -11,7 +11,7 @@ virtualenv env --python=python3
 
 Activar el ambiente virtual
 ```sh
-source bin/activate
+source env/bin/activate
 ```
 
 **Paso 2.**
@@ -38,3 +38,29 @@ ingresamos a nuestro proyecto
 ```sh
 cd yaramerca
 ```
+
+**paso 4.**
+
+Listamos lo que hay dentro de nuestro proyecto
+
+```sh
+ls
+```
+Se crea nuestra **app** que se llamara reto1
+
+```sh
+./manage.py startapp reto1
+```
+
+ingresamos a la carpeta **yaramerca** y se agrega el perfil que va a tener nuestra app en este caso **reto1** así que verificamos el archivo denominado **settings.py**
+
+```sh
+vim settings.py
+```
+En la opción **INSTALLED_APPS** se agrega la las lineas 
+
+```sh
+'reto1',                                                                
+'rest_framework', 
+```
+
