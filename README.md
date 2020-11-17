@@ -57,10 +57,11 @@ ingresamos a la carpeta **yaramerca** y se agrega el perfil que va a tener nuest
 ```sh
 vim settings.py
 ```
-En la opción **INSTALLED_APPS** se agrega la las lineas 
+En la opción **INSTALLED_APPS** se agregan las lineas 
 
 ```sh
 'reto1',                                                                
 'rest_framework', 
 ```
+![2020-11-16_21-06](https://user-images.githubusercontent.com/42874558/99337464-4da3b080-2850-11eb-826e-c21ae7decbb9.png)
 
