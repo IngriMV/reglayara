@@ -20,7 +20,6 @@ Instalar las instancias del framwork **DJANGO**
 
 ```sh
 pip3 install djangorestframework
-pip3 install djangorestframework
 pip3 install markdown 
 pip3 install django-filter
 ```
@@ -89,7 +88,7 @@ Realizamos la migración del **modelo**
 
 **Paso 7.**
 
-Nos devolvemos  ala carpeta **yaramerca** editamos el archivo denominado **admin.py** donde agregamos nuestroa configuración del **usuario administrador** para dar acceso a los modelos de nuestro proyecto
+Nos devolvemos  a la carpeta **yaramerca** editamos el archivo denominado **admin.py** donde agregamos nuestro modelo a la interfaz de administración de Django para tener acceso a los datos almacenados en el modelo de nuestro proyecto
 
 
 ```sh
